@@ -4,25 +4,25 @@
 
 **1. Experiment design**
 
-​	1. 실험 목표
+​		1. 실험 목표
 
-​	2. 데이터 분석(Train Data)
+​		2. 데이터 분석(Train Data)
 
-​	3. 사용 모형
+​		3. 사용 모형
 
-​	4. 실험 전 예상결과
+​		4. 실험 전 예상결과
 
 **2. Evaluation metrics**
 
-​	1. Matrix
+​		1. Matrix
 
-​	2. Graph
+​		2. Graph
 
 **3. Experimental results**
 
-​	1. 결과정리
+​		1. 결과정리
 
-​	2. 특이사항
+​		2. 특이사항
 
 
 
