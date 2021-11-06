@@ -4,37 +4,37 @@
 
 **1. Experiment design**
 
-​		1. 실험 목표
+​		1. 1 실험 목표
 
-​		2. 데이터 분석(Train Data)
+​		1.2 데이터 분석(Train Data)
 
-​		3. 사용 모형
+​		1.3 사용 모형
 
-​		4. 실험 전 예상결과
+​		1. 4. 실험 전 예상결과
 
 **2. Evaluation metrics**
 
-​		1. Matrix
+​		2.1 Matrix
 
-​		2. Graph
+​		2.2 Graph
 
 **3. Experimental results**
 
-​		1. 결과정리
+​		3.1 결과정리
 
-​		2. 특이사항
+​		3.2 특이사항
 
 
 
 # 1. Experiment design
 
-### 1. 실험 목표
+### 1.1 실험 목표
 
 ​	Source sequence를 Target sequence와 matching 시키는것.
 
 
 
-### 2. 데이터 분석(Train Data)
+### 1.2 데이터 분석(Train Data)
 
 |        | Min_index | Max_index | Min_sen_len | Max_sen_len | Mean_sen_len | Vocab_size |       Duplicate_row       | Corpus_sen_count |
 | :----: | :-------: | :-------: | :---------: | :---------: | :----------: | :--------: | :-----------------------: | :--------------: |
@@ -53,7 +53,7 @@
 
 
 
-### 3. 사용 모형
+### 1.3 사용 모형
 
 **Transformer 기반 모델 설계**
 
@@ -89,7 +89,7 @@
 
   
 
-### 4. 실험 전 예상결과
+### 1.4 실험 전 예상결과
 
  Transformer기반 모델들은 대용량 Corpus를 기반으로 학습됩니다. 하지만 주어진 실험가능한 데이터는 약 7000쌍입니다.
 
@@ -99,9 +99,9 @@
 
 # 2. Evaluation metrics
 
-### 1. Matrix
+### 2.1 Matrix
 
-### 2. Graph
+### 2.2 Graph
 
 
 
@@ -109,9 +109,9 @@
 
 # 3. Experimental results
 
-### 1. 결과정리
+### 3.1 결과정리
 
-### 2. 특이사항
+### 3.2 특이사항
 
 - Training Loss보다 Validation Loss가 더 낮게 관찰됨
   - 
