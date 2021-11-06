@@ -26,11 +26,17 @@
 
 
 
+
+
 # 1. Experiment design
 
 ### 1.1 실험 목표
 
 ​	Source sequence를 Target sequence와 matching 시키는것.
+
+
+
+
 
 
 
@@ -50,6 +56,10 @@
 - source 데이터는 (적은 단어수, 긴 문장길이)로 한문장을 표현하고 target 데이터는 (많은 단어수, 짧은 문장길이)로 한 문장을 표현함
 
 - source, target vocab에서 동시에 가지고 있는 data가 하나 존재함
+
+
+
+
 
 
 
@@ -87,7 +97,9 @@
     - source, target data 각각 단어 embedding matrixa 생성
   - 약 7000개의 데이터를 기반으로한 선행 연구를 찾지 못했습니다. 하이퍼파라미터(n_layers, d_model ,ffn_hidden)를 변경하며, 적은 데이터로도 mapping 가능한 모델을 실험할것입니다.
 
-  
+
+
+
 
 ### 1.4 실험 전 예상결과
 
@@ -97,11 +109,25 @@
 
 
 
+
+
+
+
 # 2. Evaluation metrics
 
 ### 2.1 Matrix
 
+
+
+
+
+
+
 ### 2.2 Graph
+
+
+
+
 
 
 
@@ -110,6 +136,10 @@
 # 3. Experimental results
 
 ### 3.1 결과정리
+
+
+
+
 
 ### 3.2 특이사항
 
