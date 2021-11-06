@@ -1,26 +1,28 @@
 # 딥러닝 테스트
 
-[1. Experiment design](#1-experiment-design)
+### 목차
 
-​	[1. 실험 목표](#1------)
+**1. Experiment design**
 
-​	[2. 데이터 분석(Train Data)](#2--------train-data-)
+​	1. 실험 목표
 
-​	[3. 사용 모형](#3------)
+​	2. 데이터 분석(Train Data)
 
-​	[4. 실험 전 예상결과](#4----------)
+​	3. 사용 모형
 
-[2. Evaluation metrics](#2-evaluation-metrics)
+​	4. 실험 전 예상결과
 
-​	[1. Matrix](#1-matrix)
+**2. Evaluation metrics**
 
-​	[2. Graph](#2-graph)
+​	1. Matrix
 
-[3. Experimental results](#3-experimental-results)
+​	2. Graph
 
-​	[1. 결과정리](#1-----)
+**3. Experimental results**
 
-​	[2. 특이사항](#2-----)
+​	1. 결과정리
+
+​	2. 특이사항
 
 
 
