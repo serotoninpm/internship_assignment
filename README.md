@@ -1,6 +1,28 @@
 # 딥러닝 테스트
 
-[TOC]
+[1. Experiment design](#1-experiment-design)
+
+​	[1. 실험 목표](#1------)
+
+​	[2. 데이터 분석(Train Data)](#2--------train-data-)
+
+​	[3. 사용 모형](#3------)
+
+​	[4. 실험 전 예상결과](#4----------)
+
+[2. Evaluation metrics](#2-evaluation-metrics)
+
+​	[1. Matrix](#1-matrix)
+
+​	[2. Graph](#2-graph)
+
+[3. Experimental results](#3-experimental-results)
+
+​	[1. 결과정리](#1-----)
+
+​	[2. 특이사항](#2-----)
+
+
 
 # 1. Experiment design
 
@@ -12,53 +34,10 @@
 
 ### 2. 데이터 분석(Train Data)
 
-
-
-coupus_snetence_count = 7260
-
-
-
-
-
-|        | Min_index | Max_index | Min_sen_len | Max_sen_len | Mean_sen_len | Vocab_size | Duplicate_row | Corpus_sen_count |
-| ------ | :-------: | --------- | ----------- | ----------- | ------------ | ---------- | ------------- | ---------------- |
-| Source |    21     | 619       | 2           | 81          |              |            |               |                  |
-| Target |           |           |             |             |              |            |               |                  |
-
-
-
-**source 정보** 
-
-- min_index: 21 
-
-- max_index: 619 
-
-- min_sen_len: 2
-
-- max_sen_len: 81 
-
-- mean_sen_len: 18.985399449035814 
-
-- vocab_size: 53 
-
-- duplicate_row = 1192 (전체의 문장의 16.4%)
-
-
-
-**target 정보** 
-
-- min_index: 0 
-
-- max_index: 658 
-
-- min_sen_len: 1 
-
-- max_sen_len: 54 
-
-- mean_sen_len: 10.051928374655647 
-
-- vocab_size: 595 
-- duplicate_row = 1187 (전체의 문장의 16.3%)
+|        | Min_index | Max_index | Min_sen_len | Max_sen_len | Mean_sen_len | Vocab_size |       Duplicate_row       | Corpus_sen_count |
+| :----: | :-------: | :-------: | :---------: | :---------: | :----------: | :--------: | :-----------------------: | :--------------: |
+| Source |    21     |    619    |      2      |     81      |  18.985399   |     53     | 1192(전체의 문장의 16.4%) |       7260       |
+| Target |     0     |    658    |      1      |     54      |  10.051928   |    595     | 1187(전체의 문장의 16.3%) |       7260       |
 
 
 
@@ -112,7 +91,7 @@ coupus_snetence_count = 7260
 
  Transformer기반 모델들은 대용량 Corpus를 기반으로 학습됩니다. 하지만 주어진 실험가능한 데이터는 약 7000쌍입니다.
 
-따라서 기존의 transformer논문에 나온 BLEU값인 25.8보다 낮은 결과가 예상됩니다.
+따라서 기존의 transformer논문에서 제시된 BLEU값인 25.8보다 낮은 결과가 예상됩니다.
 
 
 
@@ -132,5 +111,6 @@ coupus_snetence_count = 7260
 
 ### 2. 특이사항
 
-- Training
+- Training Loss보다 Validation Loss가 더 낮게 관찰됨
+  - 
 
