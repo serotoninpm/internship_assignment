@@ -28,14 +28,13 @@
 
 
 
-
 # 1. Experiment design
 
 ### 1.1 실험 목표
 
 ​	Source sequence를 Target sequence와 matching 시키는 것.
 
-
+---
 
 ### 1.2 데이터 분석(Train Data)
 
@@ -45,7 +44,7 @@
 | Target |     0     |    658    |      1      |     54      |  10.051928   |    595     | 1187(전체의 문장의 16.3%) |       7260       |
 
 
-
+---
 **데이터 분석 결과**
 
 - target 데이터의 vocab size가 source 데이터의 vocab size보다 11.22배 큼
@@ -58,7 +57,7 @@
 
 
 
-
+---
 
 ### 1.3 사용 모형
 
@@ -70,7 +69,7 @@
 
   실험 목표인 sequence ordering 문제와 word matching 문제해결에 적합할 것으로 생각됩니다.
 
-  
+---
 
 - 모델 configuation
 
@@ -84,7 +83,7 @@
   - epoch = 300
 
   
-
+---
 - 특이사항
 
   - inference시, Greedy Decoder 사용
@@ -96,7 +95,7 @@
 
 
 
-
+---
 
 ### 1.4 실험 전 예상결과
 
@@ -108,7 +107,7 @@
 
 
 
-
+---
 
 # 2. Evaluation metrics
 
@@ -135,7 +134,7 @@
 |    6    |    2048    |   256   | 63.5 |  0.0020108426370742645  | 0.010368053558404032  |
 |    6    |    2048    |   512   | 63.6 |  0.001762682026971809   | 0.007725261273267476  |
 
-
+---
 
 ### 2.2 Graph
 <img src="/result/loss_graph/loss_graph-4-512-256.png" width="30%" height="30%" title="1" alt=""></img>
@@ -180,19 +179,20 @@
 
 
 ### 3.3 특이사항
+---
 
 **문제상황**
 
 Loss Graph에서 train loss보다 validation loss가 더 낮게 관찰되었습니다. 
 
 
-
+---
 **문제 분석**
 
 Train의 시작 부분에서 train set이 validation set보다 loss가 클 수 있습니다.(train loss는 학습 중 loss 평균, validation loss는 학습 후 loss 평균이므로) 하지만, 학습의 시작부터 끝까지 train set loss가 validation loss 보다 큰 것은 train data보다 validation data를 더 잘 예측한다는 의미이므로 상식적인 결과가 아닙니다.
 
 
-
+---
 **실험**
 
 **데이터 세트 문제로 문제정의 후 실험**
@@ -208,7 +208,7 @@ Train의 시작 부분에서 train set이 validation set보다 loss가 클 수 �
 - 데이터 set을 multi30k로 변경하여 실험
 - model에서 train mode에서 evaluation mode로 전환할 때, dropout이 적용 여부에 따른 결과 차이
 
-
+---
 
 **실험 결과**
 
@@ -217,13 +217,13 @@ Train의 시작 부분에서 train set이 validation set보다 loss가 클 수 �
 - model의 evaluation을 평가할 때 mode를 eval()로 전환하지 않고 실험한 결과 아래 결과 사진과 같이 train loss가 evaluation loss보다 컸던 문제가 해결되었습니다.
 
 
-
+---
 **결과 정리**
 
 eval() mode에서는  dropout layer가 비활성화되기 때문에 더 많은 parameter로 결과값을 예측합니다. 따라서 train() mode보다 eval() mode에서 loss가 수렴하기 전까지 더 잘 예측하는 것을 확인할 수 있습니다.
 
 
-
+---
 **결과 사진**
 
 - evaluation 평가시, eval() mode일 때와 eval() mode를 삭제했을 때 loss graph</br>
