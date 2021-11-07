@@ -29,7 +29,6 @@
 
 
 
-
 # 1. Experiment design
 
 ### 1.1 실험 목표
@@ -139,6 +138,24 @@
 
 
 ### 2.2 Graph
+<img src="/result/loss_graph/loss_graph-4-512-256.png" width="30%" height="30%" title="1" alt=""></img>
+<img src="/result/loss_graph/loss_graph-4-512-512.png" width="30%" height="30%" title="2" alt=""></img>
+<img src="/result/loss_graph/loss_graph-4-1024-256.png" width="30%" height="30%" title="3" alt=""></img>
+<img src="/result/loss_graph/loss_graph-4-1024-512.png" width="30%" height="30%" title="4" alt=""></img>
+<img src="/result/loss_graph/loss_graph-4-2048-256.png" width="30%" height="30%" title="5" alt=""></img>
+<img src="/result/loss_graph/loss_graph-4-2048-512.png" width="30%" height="30%" title="6" alt=""></img>
+<img src="/result/loss_graph/loss_graph-5-512-256.png" width="30%" height="30%" title="7" alt=""></img>
+<img src="/result/loss_graph/loss_graph-5-512-512.png" width="30%" height="30%" title="8" alt=""></img>
+<img src="/result/loss_graph/loss_graph-5-1024-256.png" width="30%" height="30%" title="9" alt=""></img>
+<img src="/result/loss_graph/loss_graph-5-1024-512.png" width="30%" height="30%" title="10" alt=""></img>
+<img src="/result/loss_graph/loss_graph-5-2048-256.png" width="30%" height="30%" title="11" alt=""></img>
+<img src="/result/loss_graph/loss_graph-5-2048-512.png" width="30%" height="30%" title="12" alt=""></img>
+<img src="/result/loss_graph/loss_graph-6-512-256.png" width="30%" height="30%" title="13" alt=""></img>
+<img src="/result/loss_graph/loss_graph-6-512-512.png" width="30%" height="30%" title="14" alt=""></img>
+<img src="/result/loss_graph/loss_graph-6-1024-256.png" width="30%" height="30%" title="15" alt=""></img>
+<img src="/result/loss_graph/loss_graph-6-1024-512.png" width="30%" height="30%" title="16" alt=""></img>
+<img src="/result/loss_graph/loss_graph-6-2048-256.png" width="30%" height="30%" title="17" alt=""></img>
+<img src="/result/loss_graph/loss_graph-6-2048-512.png" width="30%" height="30%" title="18" alt=""></img>
 
 
 
@@ -158,7 +175,7 @@
 
 ### 3.2 결과 사진
 
-
+![결과사진](result/translate_poto/translate_poto.png)
 
 
 
@@ -209,4 +226,7 @@ eval() mode에서는  dropout layer가 비활성화 되기 때문에 더 많은 
 
 **결과 사진**
 
-- evaluation 평가시, eval() mode일 때와 eval() mode를 삭제했을 때 loss graph
+- evaluation 평가시, eval() mode일 때와 eval() mode를 삭제했을 때 loss graph</br>
+<img src="/result/compare_model_eval_mode/eval_mode.png" width="40%" height="40%" title="" alt=""></img>
+<img src="/result/compare_model_eval_mode/remove_eval_mode.png" width="40%" height="40%" title="" alt=""></img>
+
